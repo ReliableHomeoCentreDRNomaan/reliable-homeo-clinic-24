@@ -9,7 +9,7 @@ const BookAppointment = () => {
   };
 
   const handleBookOnline = () => {
-    window.open("https://calendly.com/reliablehomeo-info", "_blank");
+    window.open("https://dr-nomaan-siddiqui.dayschedule.com/", "_blank");
   };
 
 
@@ -54,9 +54,9 @@ const BookAppointment = () => {
                 </CardHeader>
                 <CardContent className="text-center space-y-4">
                   <div className="text-2xl font-bold text-primary">+91 86869 04404</div>
-                  <Button 
-                    variant="healing" 
-                    size="lg" 
+                  <Button
+                    variant="healing"
+                    size="lg"
                     onClick={handlePhoneCall}
                     className="w-full"
                   >
@@ -92,15 +92,16 @@ const BookAppointment = () => {
                     <Video className="h-4 w-4" />
                     <span>Secure Video Consultation</span>
                   </div>
-                  <Button 
-                    variant="appointment" 
-                    size="lg" 
+                  <Button
+                    variant="appointment"
+                    size="lg"
                     onClick={handleBookOnline}
                     className="w-full"
                   >
                     <Calendar className="h-5 w-5 mr-2" />
                     Book Online Consultation
                   </Button>
+                  {/* <DayScheduleButton /> */}
                 </CardContent>
               </Card>
             </div>
@@ -123,11 +124,11 @@ const BookAppointment = () => {
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <p className="text-sm text-muted-foreground">
-                        4-1-414, Sagar Plaza, Opposite Sachin Sports, <br />
-                        Abids road, Bank Street.
+                      4-1-414, Sagar Plaza, Opposite Sachin Sports, <br />
+                      Abids road, Bank Street.
                     </p>
                   </div>
-                  
+
                   <div className="flex items-start space-x-2 text-sm">
                     <Clock className="h-4 w-4 text-primary" />
                     <span className="font-medium">Timings:</span>
@@ -145,8 +146,8 @@ const BookAppointment = () => {
                     <span className="text-success">Monday to Saturday</span>
                   </div>
 
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     className="w-full mt-4"
                     onClick={() => window.open("https://maps.google.com/?q=Abids+Reliable+Homeo+Clinic", "_blank")}
                   >
@@ -155,8 +156,8 @@ const BookAppointment = () => {
                   </Button>
                 </CardContent>
               </Card>
-              
-              
+
+
               {/* Mehdipatnam Clinic */}
               <Card className="shadow-card">
                 <CardHeader>
@@ -172,7 +173,7 @@ const BookAppointment = () => {
                       (Near Quba Masjid & Premier Hospital)
                     </p>
                   </div>
-                  
+
                   <div className="flex items-center space-x-2 text-sm">
                     <Clock className="h-4 w-4 text-primary" />
                     <span className="font-medium">Timings:</span>
@@ -185,8 +186,8 @@ const BookAppointment = () => {
                     <span className="text-success">Tuesday and Thursday</span>
                   </div>
 
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     className="w-full mt-4 place-content-end"
                     onClick={() => window.open("https://maps.google.com/?q=Mehdipatnam+Reliable+Homeo+Clinic", "_blank")}
                   >
@@ -202,7 +203,7 @@ const BookAppointment = () => {
               <h3 className="text-2xl font-bold text-foreground text-center mb-8">
                 What to Expect During Your Visit
               </h3>
-              
+
               <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div className="space-y-3">
                   <div className="h-12 w-12 bg-primary rounded-full flex items-center justify-center mx-auto text-primary-foreground font-bold">
