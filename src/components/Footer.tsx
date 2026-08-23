@@ -17,7 +17,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Providing gentle, natural, and effective homeopathy care to the people of Hyderabad. 
+              Providing gentle, natural, and effective homeopathy care to the people of Hyderabad.
               Your trusted partner in holistic healing.
             </p>
             <div className="flex flex-col items-start gap-4 text-sm text-muted-foreground">
@@ -44,7 +44,7 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
                 <span className="leading-relaxed">
-                  4-1-414, Sagar Plaza, <br/>Opposite Sachin Sports,<br/>Abids road, Bank Street.
+                  4-1-414, Sagar Plaza, <br />Opposite Sachin Sports,<br />Abids road, Bank Street.
                 </span>
               </div>
               <div className="flex items-center space-x-2">
@@ -111,31 +111,69 @@ const Footer = () => {
               >
                 Health Tips
               </Link>
+              <Link
+                to="/contact_us"
+                className="block text-sm text-muted-foreground hover:text-primary transition-smooth"
+              >
+                Contact Us
+              </Link>
             </nav>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-border">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-muted-foreground">
+          <div className="flex flex-col items-center gap-6 lg:flex-row lg:justify-between">
+
+            {/* Copyright */}
+            <p className="text-sm text-muted-foreground text-center lg:text-left">
               © {new Date().getFullYear()} Reliable Homeo Clinics. All rights reserved.
             </p>
-            <div className="flex items-center space-x-6 text-sm text-muted-foreground">
-              <Link to="/privacy" className="hover:text-primary transition-smooth">
+
+            {/* Policy Links */}
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
+              <Link
+                to="/privacy_policy"
+                className="hover:text-primary transition-smooth"
+              >
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="hover:text-primary transition-smooth">
-                Terms of Service
-              </Link>
-              <a 
-                href="mailto:info@reliablehomeo.com" 
-                className="flex items-center space-x-2 hover:text-primary transition-smooth"
+
+              <Link
+                to="/terms_and_conditions"
+                className="hover:text-primary transition-smooth"
               >
-                <Mail className="h-4 w-4" />
+                Terms and Conditions
+              </Link>
+
+              <Link
+                to="/cancellation_refund_policy"
+                className="hover:text-primary transition-smooth"
+              >
+                Cancellation & Refund Policy
+              </Link>
+
+              <Link
+                to="/shipping_and_delivery_policy"
+                className="hover:text-primary transition-smooth"
+              >
+                Shipping & Delivery Policy
+              </Link>
+            </div>
+
+            {/* Contact */}
+            <div className="flex items-center gap-2 text-sm text-muted-foreground whitespace-nowrap">
+              <span>Contact:</span>
+
+              <a
+                href="mailto:info@reliablehomeo.com"
+                className="flex items-center gap-2 hover:text-primary transition-smooth"
+              >
+                <Mail className="h-4 w-4 shrink-0" />
                 <span>info@reliablehomeo.com</span>
               </a>
             </div>
+
           </div>
         </div>
       </div>
